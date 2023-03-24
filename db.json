@@ -1,0 +1,59 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "avatar": "/src/assets/avatar-mark-webber.webp",
+      "userName": "Mark Webber",
+      "time": 1679658096203,
+      "postTitle": "My first tournament today!",
+      "type": "reaction"
+    },
+    {
+      "id": 2,
+      "avatar": "/src/assets/avatar-nathan-peterson.webp",
+      "userName": "Nathan Peterson",
+      "time": 1679658096203,
+      "postTitle": "5 end-game strategies to increase your win rate",
+      "type": "reaction"
+    },
+    {
+      "id": 3,
+      "avatar": "/src/assets/avatar-jacob-thompson.webp",
+      "userName": "Jacob Thompson",
+      "time": 1679658096203,
+      "groupName": "Chess Club",
+      "type": "join-group"
+    },
+    {
+      "id": 4,
+      "avatar": "/src/assets/avatar-anna-kim.webp",
+      "userName": "Anna Kim",
+      "time": 1679658096203,
+      "groupName": "Chess Club",
+      "type": "left-group"
+    },
+    {
+      "id": 5,
+      "avatar": "/src/assets/avatar-angela-gray.webp",
+      "userName": "Angela Gray",
+      "time": 1679658096203,
+      "type": "follow"
+    },
+    {
+      "id": 6,
+      "avatar": "/src/assets/avatar-rizky-hasanuddin.webp",
+      "userName": "Rizky Hasanuddin",
+      "time": 1679658096203,
+      "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+      "type": "message"
+    },
+    {
+      "id": 7,
+      "avatar": "/src/assets/avatar-kimberly-smith.webp",
+      "userName": "Kimberly Smith",
+      "time": 1679658096203,
+      "pictureSrc": "/src/assets/image-chess.webp",
+      "type": "comment"
+    }
+  ]
+}
