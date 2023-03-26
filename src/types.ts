@@ -4,6 +4,7 @@ export type Notification = {
   userName: string;
   time: number;
   type: string;
+  isRead: boolean;
   postTitle?: string;
   groupName?: string;
   message?: string;
