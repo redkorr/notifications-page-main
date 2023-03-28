@@ -9,9 +9,12 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix && prettier --write \"**/*.ts\"",
-    "format": "prettier --write \"**/*.ts\""
+    "format": "prettier --write \"**/*.ts\"",
+    "start": "json-server --watch db.json",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
