@@ -7,7 +7,7 @@ interface Props extends SVGProps<SVGImageElement> {
 const ImageComponent = ({ src }: Props) => {
   return (
     <img
-      className="w-12 mr-5"
+      className="w-12 mr-5 min-w-[48px] min-h-12"
       src={src}
     />
   );

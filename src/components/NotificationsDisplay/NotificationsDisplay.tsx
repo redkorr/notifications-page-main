@@ -8,14 +8,14 @@ const NotificationsDisplay = () => {
   const data = useApi('/notifications');
 
   return (
-    <>
+    <div>
       {data?.map((notification) => (
         <NotificationCard
           key={notification.id}
           notification={notification}
         />
       ))}
-    </>
+    </div>
   );
 };
 
