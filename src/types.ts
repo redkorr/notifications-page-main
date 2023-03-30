@@ -10,3 +10,9 @@ export type Notification = {
   message?: string;
   pictureSrc?: string;
 };
+
+export type ApiResponse = {
+  success: boolean;
+  data?: unknown;
+  error?: unknown;
+};
