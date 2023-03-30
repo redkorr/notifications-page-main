@@ -46,7 +46,7 @@ const getContentByNotificationType = (notification: Notification) => {
   }
 };
 
-const NotificationCard = ({ notification }: Props) => {
+const NotificationCard: React.FC<Props> = ({ notification }: Props) => {
   return (
     <div
       className={
