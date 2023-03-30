@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import { Notification } from '../../src/types';
+import { Notification } from '../types';
 
 const BASE_URL = import.meta.env.MODE === 'production' ? import.meta.env.BASE_URL : 'http://localhost:3000';
 
-const useApi = (path: string): Array<Notification> | undefined => {
+const useApiGET = (path: string): Array<Notification> | undefined => {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -26,4 +26,4 @@ const useApi = (path: string): Array<Notification> | undefined => {
   return data;
 };
 
-export default useApi;
+export default useApiGET;
