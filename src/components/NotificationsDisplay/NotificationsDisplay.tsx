@@ -43,6 +43,22 @@ const NotificationsDisplay: React.FC = () => {
     setData(updatedNotifications);
   };
 
+  const markAsRead = (_: React.MouseEvent<HTMLDivElement>, notificationId: number) => {
+    if (!data) {
+      return;
+    }
+
+    fetchData(`/notifications/${notificationId}`, { isRead: true });
+
+    const notifiacationIndex = data?.findIndex((notification) => notification.id === notificationId);
+
+    const updatedNotifications = [...data];
+
+    updatedNotifications[notifiacationIndex].isRead = true;
+
+    setData(updatedNotifications);
+  };
+
   return (
     <div className="p-8">
       <div className="flex pb-6 items-center justify-between">
@@ -61,10 +77,12 @@ const NotificationsDisplay: React.FC = () => {
       </div>
       <div>
         {data?.map((notification) => (
-          <NotificationCard
-            key={notification.id}
-            notification={notification}
-          />
+          <div onClick={(event) => markAsRead(event, notification.id)}>
+            <NotificationCard
+              key={notification.id}
+              notification={notification}
+            />
+          </div>
         ))}
       </div>
     </div>
