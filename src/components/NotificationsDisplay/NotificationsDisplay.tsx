@@ -60,7 +60,7 @@ const NotificationsDisplay: React.FC = () => {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-8 w-full bg-white rounded-xl lg:w-1/2">
       <div className="flex pb-6 items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold">Notifications</span>
