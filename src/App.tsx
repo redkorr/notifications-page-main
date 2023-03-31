@@ -4,7 +4,7 @@ import NotificationsDisplay from './components/NotificationsDisplay/Notification
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex justify-center">
       <NotificationsDisplay />
     </div>
   );
